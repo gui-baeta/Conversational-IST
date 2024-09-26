@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingLeft="8pt"
+        android:paddingRight="8pt"
+        android:paddingVertical="3pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/chat_list_group_template"
+        android:tag="chat"
+        android:clickable="true"
+        android:background="@drawable/custom_selector">
+
+    <TextView
+            android:id="@+id/chat_logo"
+            android:background="@drawable/chat_image"
+            android:layout_width="26pt"
+            android:layout_height="26pt"
+            android:textSize="10pt"
+            android:fontFamily="@font/firacode_bold"
+            android:textFontWeight="900"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="CN"
+            android:textColor="@color/text_color" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="6pt"
+                android:textSize="8pt"
+                android:text="Chat Name"
+                android:fontFamily="@font/firacode_bold"
+                android:textFontWeight="600"
+                android:textStyle="bold"
+                android:id="@+id/chat_name"
+                android:textColor="@color/text_color"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="6pt"
+                android:textSize="9pt"
+                android:text="Message..."
+                android:fontFamily="@font/firacode_retina"
+                android:textFontWeight="200"
+                android:textStyle="bold"
+                android:id="@+id/chat_last_msg"
+                android:textColor="@color/text_color_secondary"/>
+    </LinearLayout>
+
+</LinearLayout>

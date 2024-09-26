@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context=".LoginActivity">
+
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_ephemeral_choice"
+                android:paddingHorizontal="5pt"
+                android:paddingVertical="10pt"
+                android:gravity="center_vertical|end"
+                android:layout_marginHorizontal="40pt"
+                android:layout_marginTop="5pt"
+
+                app:thumbTint="@color/message_sender_background"
+                app:trackTint="@color/actionbar"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:text="Ephemeral Account"
+                android:onClick="onAccountTypeChoice" />
+
+        <RadioButton
+                android:id="@+id/login_permanent_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5pt"
+                android:paddingVertical="10pt"
+                android:gravity="center_vertical|end"
+                android:layout_marginHorizontal="40pt"
+                android:layout_marginTop="5pt"
+
+                app:thumbTint="@color/message_sender_background"
+                app:trackTint="@color/actionbar"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:text="Permanent Account"
+                android:onClick="onAccountTypeChoice" />
+    </RadioGroup>
+
+    <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:autofillHints="@string/prompt_username"
+            android:hint="@string/prompt_username"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:textColor="@color/text_color"
+            android:textCursorDrawable="@drawable/textbox_cursor"
+            android:backgroundTint="@color/text_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:minHeight="48dp" />
+
+    <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints="@string/prompt_password"
+            android:hint="@string/prompt_password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+
+            android:textColor="@color/text_color"
+            android:textCursorDrawable="@drawable/textbox_cursor"
+            android:backgroundTint="@color/text_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:minHeight="48dp" />
+
+    <Button
+            android:id="@+id/login_button"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/action_sign_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/register_button"
+            android:layout_marginBottom="20dp" />
+
+    <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:enabled="false"
+            android:text="@string/action_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="40dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

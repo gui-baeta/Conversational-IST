@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="2">
+    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_marginEnd="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@mipmap/nsa_logo"
+                android:layout_gravity="center_vertical"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ConversationalIST"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_logout_24"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_vertical|end"
+                android:paddingHorizontal="10dp"
+                android:clickable="true"
+                android:id="@+id/logout_button" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_actionbar_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"/>
+    </TableRow>
+</TableLayout>

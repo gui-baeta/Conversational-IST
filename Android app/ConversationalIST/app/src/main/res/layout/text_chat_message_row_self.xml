@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/text_message_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_rectangle"
+
+                    android:maxWidth="350dp"
+                    android:minWidth="35pt"
+                    android:paddingStart="8dp"
+                    android:paddingTop="26dp"
+                    android:paddingEnd="8dp"
+
+                    android:paddingBottom="25dp"
+
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    android:textColor="@color/message_text"
+                    android:textFontWeight="700"
+                    android:textSize="18dp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="4dp" />
+
+            <TextView
+                    android:id="@+id/sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/rounded_rectangle_their"
+                    android:elevation="5pt"
+                    android:fontFamily="@font/firacode_bold"
+                    android:maxLines="1"
+                    android:paddingVertical="-2dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="You"
+                    android:textColor="@color/message_text"
+                    android:textFontWeight="700"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/text_message_body"
+                    app:layout_constraintTop_toTopOf="@+id/text_message_body" />
+
+            <TextView
+                    android:id="@+id/text_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="14:42"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="@+id/text_message_body"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_message_body"
+                    android:layout_marginBottom="3dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

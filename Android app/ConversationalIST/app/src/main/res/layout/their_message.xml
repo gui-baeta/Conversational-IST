@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_container"
+        android:clickable="true">
+
+    <TextView
+            android:id="@+id/text_message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_rectangle_their"
+
+            android:paddingTop="26dp"
+            android:paddingBottom="25dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+
+            android:minWidth="35pt"
+
+            android:textFontWeight="700"
+            android:textSize="18dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            android:textColor="@color/message_text"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:maxWidth="350dp"
+            android:layout_marginStart="4dp" />
+
+    <TextView
+            android:id="@+id/sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingVertical="-2dp"
+            android:fontFamily="@font/firacode_bold"
+            android:textColor="@color/message_text"
+            android:background="@drawable/message_sender_background"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textFontWeight="700"
+            android:text="Not Harambe"
+            android:elevation="5pt"
+            app:layout_constraintStart_toStartOf="@+id/text_message_body"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="7dp" />
+
+    <TextView
+            android:id="@+id/text_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:maxLines="1"
+            android:text="14:43"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text_message_body"
+            android:layout_marginEnd="12dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

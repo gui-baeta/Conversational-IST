@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ConversationalIST</string>
+    <string name="base_url">conversationalist.nice</string>
+    <string name="join_prefix_url">/join</string>
+    <string name="textbox_hint">Message...</string>
+    <string name="creategroup_hint">New Group name...</string>
+    <string name="creategroup_actionbar_text">Create New Group</string>
+    <string name="creategroup_pick_location">Pick Location</string>
+    <string name="heart"><![CDATA[\<\3]]></string>
+    <string name="searchgroup_actionbar_text">Search For Groups</string>
+    <string name="dialog_title">Report Message</string>
+    <string name="login_actionbar_text">Account Login</string>
+    <string name="prompt_username">User Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_group_name">Group Name</string>
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register_short">Register</string>
+    <string name="action_register_desc">Don\'t have an account?</string>
+    <string name="action_register">Register</string>
+    <string name="username_length_error">username must be at least 5 characters long</string>
+    <string name="username_characters_error">username should only contain letters and numbers</string>
+    <string name="password_length_error">password must be at least 8 characters long</string>
+    <string name="share_chooser">Share Using…</string>
+    <string name="action_upgrade_account">Change Password</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

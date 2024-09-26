@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="selected">#9effffff</color>
+    <color name="unselected">#00000000</color>
+    <color name="chat_logo">@color/dark_grey</color>
+    <color name="text_color">#d9d3e0</color>
+    <color name="text_color_secondary">#aaa1b8</color>
+    <color name="statusbar">#292431</color>
+    <color name="statusbar_custom">#292431</color>
+    <color name="actionbar">#292431</color>
+    <color name="textbox">#292431</color>
+    <color name="message_background">#6a587a</color>
+    <color name="message_sender_background">#9279a8</color>
+    <color name="location_message_background">#6a587a</color>
+    <color name="their_message_background">#494052</color>
+    <color name="message_text">#ffffff</color>
+
+    <color name="button_background">#4f378b</color>
+
+    <color name="textbox_location_container_background">@color/message_background</color>
+    <color name="geo_fenced_container_background">@color/light_white_transparent</color>
+    <!-- Base application theme. -->
+    <style name="Theme.ConversationalIST" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

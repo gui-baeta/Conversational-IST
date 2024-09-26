@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="2">
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="5dp"
+                android:id="@+id/chatgroup_backarea"
+                android:clickable="true">
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:id="@+id/chatgroup_back" />
+
+        </LinearLayout>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chatgroup_name"
+                android:text="Chat Group Name Placeholder"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:paddingVertical="10dp" />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_share_24"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_vertical|end"
+                android:paddingHorizontal="10dp"
+                android:clickable="true"
+                android:id="@+id/group_share_button" />
+    </TableRow>
+</TableLayout>

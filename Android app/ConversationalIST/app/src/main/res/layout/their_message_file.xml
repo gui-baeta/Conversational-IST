@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_container"
+        android:clickable="true">
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="35pt"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_rectangle_their"
+            android:paddingTop="32dp"
+            android:paddingBottom="25dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="4dp"
+            android:id="@+id/linearLayout2">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="3dp"
+                android:paddingStart="3dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/file_container"
+                android:clickable="true"
+                android:background="@drawable/location_message_background">
+
+            <ImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:paddingVertical="5dp"
+                    android:src="@drawable/ic_baseline_attach_file_24"
+                    android:background="@drawable/rounded_rectangle_their"/>
+
+            <TextView
+                    android:id="@+id/sent_file_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textFontWeight="700"
+                    android:textSize="18dp"
+                    android:text="Sent File"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/message_text">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingVertical="-2dp"
+            android:fontFamily="@font/firacode_bold"
+            android:textColor="@color/message_text"
+            android:background="@drawable/message_sender_background"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textFontWeight="700"
+            android:text="Harambe"
+            android:elevation="5pt"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="7dp" />
+
+    <TextView
+            android:id="@+id/text_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+
+            android:maxLines="1"
+            android:text="14:43"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            android:layout_marginEnd="12dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

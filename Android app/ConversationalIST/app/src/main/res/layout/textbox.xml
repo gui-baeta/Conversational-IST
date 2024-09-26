@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/search_textbox">
+
+    <LinearLayout
+            android:id="@+id/location_message_maker_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:translationY="-75dp"
+            android:background="@drawable/location_message_background"
+            android:paddingVertical="5pt"
+            android:layout_marginHorizontal="25pt"
+            android:orientation="vertical"
+
+            android:visibility="gone">
+
+        <TableLayout
+                android:paddingHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="2">
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Location:"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/text_color" />
+
+                <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/location_to_send"
+                        android:textCursorDrawable="@drawable/textbox_cursor"
+                        android:backgroundTint="@color/text_color"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/text_color"
+                        android:gravity="center_horizontal" />
+            </TableRow>
+        </TableLayout>
+        <ImageButton
+                android:id="@+id/my_location_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_my_location_24"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edit_text_background"
+                android:clickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_rectangle_textbox"
+            android:layout_marginVertical="10pt"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:paddingStart="5dp">
+
+        <ImageButton
+                android:id="@+id/take_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3pt"
+                android:src="@drawable/ic_baseline_photo_camera_24"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:clickable="true" />
+
+        <ImageButton
+                android:id="@+id/add_file_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_attach_file_24"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:clickable="true" />
+
+        <ImageButton
+                android:id="@+id/send_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_location_on_24"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:clickable="true" />
+
+        <EditText
+                android:id="@+id/message_box"
+                android:paddingHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:hint="@string/textbox_hint"
+                android:textCursorDrawable="@drawable/textbox_cursor"
+                android:backgroundTint="@color/text_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+        <ImageButton
+                android:id="@+id/send_message"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="-13pt"
+                android:layout_marginEnd="7pt"
+                android:paddingStart="10dp"
+                android:paddingEnd="5pt"
+
+                android:src="@drawable/ic_baseline_send_24"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:clickable="true" />
+    </LinearLayout>
+</RelativeLayout>

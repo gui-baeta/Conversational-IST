@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/rounded_rectangle_their"
+                    android:minWidth="35pt"
+                    android:paddingStart="8dp"
+                    android:paddingTop="32dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="25dp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                        android:id="@+id/file_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/location_message_background"
+                        android:clickable="true"
+                        android:paddingVertical="3dp"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="10dp">
+
+                    <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/rounded_rectangle_their"
+                            android:paddingVertical="5dp"
+                            android:src="@drawable/ic_baseline_attach_file_24" />
+
+                    <TextView
+                            android:id="@+id/sent_file_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Sent File"
+                            android:textColor="@color/message_text"
+                            android:textFontWeight="700"
+                            android:textSize="18dp">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/message_sender_background"
+                    android:elevation="5pt"
+                    android:fontFamily="@font/firacode_bold"
+                    android:maxLines="1"
+                    android:paddingVertical="-2dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="Harambe"
+                    android:textColor="@color/message_text"
+                    android:textFontWeight="700"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                    app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+                    android:layout_marginTop="7dp" />
+
+            <TextView
+                    android:id="@+id/text_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+
+                    android:layout_marginBottom="3dp"
+                    android:maxLines="1"
+                    android:text="14:43"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
